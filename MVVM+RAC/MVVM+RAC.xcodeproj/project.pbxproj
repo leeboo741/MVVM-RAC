@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8338775035199315281110EB /* libPods-MVVM+RAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4D998BA1F0F03E07EEDEC7 /* libPods-MVVM+RAC.a */; };
 		B05A25D9211546D9007405CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B05A25D8211546D9007405CE /* AppDelegate.m */; };
 		B05A25DC211546D9007405CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05A25DB211546D9007405CE /* ViewController.m */; };
 		B05A25DF211546D9007405CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05A25DD211546D9007405CE /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D070E944795458A6D07EDAE /* Pods-MVVM+RAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM+RAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM+RAC/Pods-MVVM+RAC.release.xcconfig"; sourceTree = "<group>"; };
+		A932B92D2E4798C7C89C1A8A /* Pods-MVVM+RAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM+RAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM+RAC/Pods-MVVM+RAC.debug.xcconfig"; sourceTree = "<group>"; };
 		B05A25D4211546D9007405CE /* MVVM+RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+RAC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05A25D7211546D9007405CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B05A25D8211546D9007405CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		B05A25F7211546D9007405CE /* MVVM+RACUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM+RACUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05A25FB211546D9007405CE /* MVVM_RACUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_RACUITests.m; sourceTree = "<group>"; };
 		B05A25FD211546D9007405CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4D998BA1F0F03E07EEDEC7 /* libPods-MVVM+RAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM+RAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8338775035199315281110EB /* libPods-MVVM+RAC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C8F4EF7DC343B872E786DF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A932B92D2E4798C7C89C1A8A /* Pods-MVVM+RAC.debug.xcconfig */,
+				8D070E944795458A6D07EDAE /* Pods-MVVM+RAC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B05A25CB211546D9007405CE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				B05A25EF211546D9007405CE /* MVVM+RACTests */,
 				B05A25FA211546D9007405CE /* MVVM+RACUITests */,
 				B05A25D5211546D9007405CE /* Products */,
+				7C8F4EF7DC343B872E786DF3 /* Pods */,
+				B1A1211E66E4104C71C0CAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = "MVVM+RACUITests";
 			sourceTree = "<group>";
 		};
+		B1A1211E66E4104C71C0CAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB4D998BA1F0F03E07EEDEC7 /* libPods-MVVM+RAC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B05A2600211546D9007405CE /* Build configuration list for PBXNativeTarget "MVVM+RAC" */;
 			buildPhases = (
+				7A4F330450E012156C1B8070 /* [CP] Check Pods Manifest.lock */,
 				B05A25D0211546D9007405CE /* Sources */,
 				B05A25D1211546D9007405CE /* Frameworks */,
 				B05A25D2211546D9007405CE /* Resources */,
+				3D38D6340495E4A5C530C917 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +285,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D38D6340495E4A5C530C917 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM+RAC/Pods-MVVM+RAC-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MBProgressHUD+JDragon/MBProgressHUD+JDragon/MBProgressHUD+JDragon.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBProgressHUD+JDragon.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM+RAC/Pods-MVVM+RAC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4F330450E012156C1B8070 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM+RAC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B05A25D0211546D9007405CE /* Sources */ = {
@@ -428,6 +497,7 @@
 		};
 		B05A2601211546D9007405CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A932B92D2E4798C7C89C1A8A /* Pods-MVVM+RAC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +512,7 @@
 		};
 		B05A2602211546D9007405CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D070E944795458A6D07EDAE /* Pods-MVVM+RAC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
